@@ -45,6 +45,8 @@
 .date{
     font-size: 14px;
     margin-bottom: 15px;
+    border: solid 1px #ff5945;
+    border-radius: 8px;
 }
 .row{
     display: flex;
@@ -86,14 +88,16 @@ button{
     font-size:20px;
     font-weight: 500;
     border-radius: 15px;
+    color: white;
+    padding: 5px 20px;
 }
 
 
 
 ul li{
     list-style: none;
-    font-size: 27px;
-    padding:12px 8px 12px 50px;
+    font-size: 16px;
+    padding:5px 4px 4px 32px;
     user-select:none;
     cursor:pointer;
     position:relative;
@@ -101,13 +105,13 @@ ul li{
 ul li::before{
     content:'';
     position:absolute;
-    height:28px;
-    width:28px;
+    height:20px;
+    width:20px;
     border-radius:50%;
     background-image:url(icon-ios7-circle-outline-512.webp);
     background-size:cover;
     background-position:cetner;
-    top:8px;
+    top:3px;
     left:8px;
 }
 ul li.checked{
@@ -121,11 +125,11 @@ ul li span{
     position:absolute;
     right:0px;
     top:5px;
-    width:40px; 
-    height:40px;
-    font-size:32px;
-    color:#555;
-    line-height:40px;
+    width:20px; 
+    height:20px;
+    font-size:20px;
+    color:#d84545;
+    line-height:20px;
     text-align:center;
     border-radius: 50%;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To Do list web app 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</head>
+
+<body>
+   
+        <div class="container">
+            
+                <div class="todo-app">
+                    
+                    <div class="datebox">
+                        <h2>To-Do-List <img src="to-do-list-icon-15.jpg"></h2>
+                        <input type="datetime-local" name="Date" class="date">
+                    </div>
+                   
+                    <div class="row">
+                        <input type="text" placeholder="What's to do today?" id="input-box"><button onclick="addTask()">Add</button>
+                        
+                    </div><form>
+                        <ul id="listContainer" name="Submitted Task">
+                             <li class="checked">Task 1 </li>
+                             <li>Task 1 </li>
+                             <li>Task 1 </li>  
+                         </ul>
+                    </form>
+                   
+    
+                    <button type="submit" class="btn">Submit</button>
+                
+                    </div>
+            
+           
+
+        </div> 
+        <script src="script.js"></script>
+        
+
+ 
+   
+</body>
+</html>

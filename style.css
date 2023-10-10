@@ -31,21 +31,33 @@
     color: #002765;
     display:flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .todo-app h2 img{
     width:30px;
-    margin-left:40px;
+    margin-left:20px;
 }
 .datebox{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.notice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d84545;
+    font-size: 10px;
+    margin-bottom: 4px;
+
+}
+span{
+    color: #1db632;
+}
 .date{
-    font-size: 14px;
-    margin-bottom: 15px;
-    border: solid 1px #ff5945;
+    font-size: 12px;
+    margin-bottom: 5px;
+    border: solid 1px #2cc039;
     border-radius: 8px;
 }
 .row{
@@ -71,27 +83,43 @@ button{
     border:none;
     outline:none;
     padding:8px 20px;
-    background:#ff5945;
+    background:#1db632;
     color:#fff;
     font-size:16px;
-    border-radius: 40px;
+    border-radius: 10px;
     cursor:pointer;
     transition: 5sec;
     transition-property: all;
 }
-.btn{
-    
-    background:#ff5945;
-    border: 0;
+.clearbtn{
+    border:none;
     outline:none;
+    padding:2px 20px;
+    background:#e66419;
+    color:#fff;
+    font-size:16px;
+    border-radius: 10px;
     cursor:pointer;
-    font-size:20px;
-    font-weight: 500;
-    border-radius: 15px;
-    color: white;
-    padding: 5px 20px;
+    transition: 5sec;
+    transition-property: all;
 }
+.btncopyright{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 
+}
+.copyright{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #002765;
+    margin-top: 2px;
+}
 
 
 ul li{
@@ -146,8 +174,8 @@ ul li span:hover{
         color: #e6762c;
         display:flex;
         align-items: center;
-        margin-bottom: 20px;
-        font-size: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
     }
     .todo-app h2 img{
         width: 25px;

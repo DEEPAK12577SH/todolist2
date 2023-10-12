@@ -103,6 +103,19 @@ button{
     transition: 5sec;
     transition-property: all;
 }
+.submittask{
+    border:none;
+    outline:none;
+    padding:2px 20px;
+    background:#1db632;
+    color:#fff;
+    font-size:16px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 5sec;
+    transition-property: all;
+}
+
 .btncopyright{
     display: flex;
     flex-wrap: wrap;

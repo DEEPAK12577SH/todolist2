@@ -146,9 +146,6 @@ ul li.checked{
     text-decoration:line-through;
     color:#555;
 }
-ul li span.delremv{
-    visibility:none;
-    click-event:none;
 ul li.checked::before{
     background-image: url(green\ check\ icon.png);
 }

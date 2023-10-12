@@ -41,7 +41,7 @@ function showData(){
 showData();
 function removedel() {
     if(e.target.classList.toggle("checked")) {
-        span.innerHTML="\u00d7";
+        span.innerHTML=" ";
     }
 }
 

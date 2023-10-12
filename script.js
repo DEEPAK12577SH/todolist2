@@ -20,7 +20,7 @@ function addTask(){
 listContainer.addEventListener("click",function(e){
     if(e.target.tagName ==="LI"){
         e.target.classList.toggle("checked");
-        
+        removedel() 
         SaveData()
     }
     else if(e.target.tagName ==="SPAN"){
@@ -39,6 +39,11 @@ function showData(){
 }
 
 showData();
+function removedel() {
+    if(e.target.classList.toggle("checked")) {
+        span.innerHTML="\u00d7";
+    }
+}
 
 function clearTask(){
     if(listContainer.innerHTML===""){

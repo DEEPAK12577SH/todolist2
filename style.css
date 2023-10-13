@@ -53,7 +53,7 @@
 
 
 .marquee {
-    -webkit-animation: rightThenLeft 8s linear;
+    -webkit-animation: rightThenLeft 15s linear;
 }
 
 

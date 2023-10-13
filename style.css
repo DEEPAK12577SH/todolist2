@@ -50,12 +50,23 @@
     font-size: 10px;
     margin-bottom: 4px;
 }
-
-
 .marquee {
     -webkit-animation: rightThenLeft 15s linear;
 }
-
+.blinking{
+	animation:blinkingText 0.6s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: blue;	}
+  20%{  color:red;}
+	49%{	color: yellow;	}
+	50%{	color: pink;	}
+  60%{  color: green;}
+  70%{  color: red;}
+  80%{  color: Orange;}
+	99%{	color:purple;	}
+	100%{	color: green;	}
+}
 
 span{
     color: #1db632;

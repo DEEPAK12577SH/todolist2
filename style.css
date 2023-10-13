@@ -49,8 +49,14 @@
     color: #d84545;
     font-size: 10px;
     margin-bottom: 4px;
-
 }
+
+
+.marquee {
+    -webkit-animation: rightThenLeft 4s linear;
+}
+
+
 span{
     color: #1db632;
 }

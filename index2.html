@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To Do list web app 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+
+<body>
+   
+        <div class="container">
+            
+                <div class="todo-app">
+                    
+                    <div class="datebox">
+                        <h2>Daily Whole day's Study Report.</h2>
+                    </div>
+                    <div class="notice">
+                        <p>DeepaK Sharma please fill reports <span>HONESTLY.</span></p>
+                     </div> 
+                     <div class="timebox">
+                        <div class="shift">
+                            <form name="submit-to-google-sheet">
+                                <label for="date">Date:</label>
+                                <input type="datetime-local" name="Date" required><br><br>
+                        
+                                <label for="message1">English Report:</label>
+                                <textarea name="English Report" rows="4" cols="50" placeholder=" Write English Report" required></textarea><br><br>
+                        
+                                <label for="message2">GS Report:</label>
+                                <textarea name="GS Report" rows="4" cols="50" placeholder=" Write GS Report" required></textarea><br><br>
+                        
+                                <label for="message3">GK Report:</label>
+                                <textarea name="GK Report" rows="4" cols="50" placeholder="Write GK Report" required></textarea><br><br>
+                        
+                                <label for="message4">Maths Report:</label>
+                                <textarea name="Maths Report" rows="4" cols="50" placeholder="Write Maths Report" required></textarea><br><br>
+                        
+                                <label for="message5">Reasoning Report:</label>
+                                <textarea name="Reasoning Report" rows="4" cols="50" placeholder="Write Reasoning Report" required></textarea><br><br>
+                        
+                                <label for="message6">Computer Report:</label>
+                                <textarea name="Computer Report" rows="4" cols="50" placeholder="Write Computer Report" required></textarea><br><br>
+                                <div  class="center" >
+                                    <input type="submit" value="Submit" class="btn">
+                                </div>
+                               
+                            </form>
+                        </div>
+                       
+                     </div>
+                   
+                   
+                      <div>
+                    <div class="center">
+                        <div class="messagebox">
+
+                            <span id="msg"> </span>
+                        </div>
+                    </div>
+                      
+               
+                    </div>
+                 <div class="copyright">
+                    <p> 2023 &copy; DEEPAK..All rights reserved. Made By Deepak Sharma.</p>
+                 </div>      
+                
+                </div>
+            
+        </div> 
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzyzgtWBRo2W9jgUkd1iALakLNmflP7siG_mNweusYjxBtdMM2zRCVTELb6rFyio-IWog/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>{
+        
+                    msg.innerHTML = 'Submitted successfully.'
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        
+            
+          </script>
+</body>
+</html>

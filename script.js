@@ -40,9 +40,11 @@ function showData(){
 
 showData();
 function removedel() {
-    if(e.target.classList.toggle("checked")) {
+    if(target.classList.toggle("checked")) {
         span.innerHTML=" ";
     }
+    else{
+        span.innerHTML="\u00d7";
 }
 
 function clearTask(){

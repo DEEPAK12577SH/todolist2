@@ -50,7 +50,7 @@ function clearTask(){
         swal("Vaccent Field!", "Tasks Area is Empty.Please Make Your Task List.", "error");
      }
     else{
-        localStorage.removeItem("data",listContainer.innerHTML);
+        
         listContainer.innerHTML= "ALL TASKS AER DELETED SUCCESSFULLY.MAKE NEW ONE AND CONTINEUE YOU JOURNEY!";
         alert("To-Do-List is Cleared Successfully.\nHope!you have completed your today's whole Tasks.\n Make a new list and Continue your study.\nYou have to clear SSC at any cost.!! YOU CAN DO IT !!\n YOU HAVE TO DO IT FOR YOU PARENTS,DO HARD WORK FOR IT\n Definitely you will crack it.\n Make New List Right now now now.....\n You have to complete your 21 Days Challenge Given By GOLDEN ASO SIR !!!\n<May GOD wacth over you!==>DEEPAK SHARMA>");
     }

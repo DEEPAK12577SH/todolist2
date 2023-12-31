@@ -43,9 +43,7 @@ function removedel() {
     if(target.classList.toggle("checked")) {
         span.innerHTML=" ";
     }
-    else{
-        span.innerHTML="\u00d7";
-}
+
 
 function clearTask(){
     if(listContainer.innerHTML===""){
